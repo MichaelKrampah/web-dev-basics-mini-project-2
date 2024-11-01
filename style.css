@@ -1,0 +1,328 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background-color: #F5F5F5;
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #4A4A4A;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #6E6E6E;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #4A4A4A;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.nav-logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%; 
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+nav ul li a {
+  color: #EAEAEA;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+nav ul li:not(:first-child) a:hover {
+  color: #e1a834;
+  background-color: #EAEAEA;
+  border-radius: 5px;
+}
+
+/* Landing Page Section */
+.landing-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/back.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.landing-page h1 {
+  font-size: 4.5rem;
+  color: #FFF8E1;
+}
+
+.landing-page h2 {
+  font-size: 1.5rem;
+  color: #FFF8E1;
+}
+
+
+.landing-page .background {
+  margin-top: 5px;
+  padding: 30px;
+}
+
+.landing-page .background button {
+  background-color: #e9dbd6;
+  border: none;
+  color: #212121;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.landing-page .background button:hover {
+  background-color: #EAEAEA;
+  color: #212121;
+}
+
+/* Footer */
+footer {
+  background-color: #4A4A4A;
+  padding: 20px;
+  color: #EAEAEA;
+  text-align: center;
+}
+
+footer .background button {
+  background-color: #e9dbd6;
+  border: none;
+  color: #212121;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+footer .background button:hover {
+  background-color: #EAEAEA;
+  color: #212121;
+}
+
+.shop-page {
+  max-width: 1200px;  
+  margin: 0 auto;     
+  padding: 0 20px;    
+}
+
+.shop-page .category-banner {
+  background-color: #f3f3f3;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.shop-page .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;     
+}
+
+.shop-page .product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.shop-page .product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.shop-page .product-card button {
+  background-color:  #e1a834;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.shop-page .product-card button:hover {
+  transform: scale(1.1); 
+}
+
+#testimonials{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/review.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#testimonials h1{
+  color: #BCB5AA;
+  font-size: 4rem;
+}
+
+.testimonial-caption {
+  color: #BCB5AA; 
+  font-size: 2rem;
+}
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px;
+}
+
+.contact-us figure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 700px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.contact-us h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.store-owner-image {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+}
+
+figcaption {
+  font-size: 18px;
+  color: #303030;
+  margin-top: 10px;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+figcaption strong {
+  font-size: 18px;
+  color: #222;
+}
+
+.contact-us button {
+  background-color: #e9dbd6;
+  border: none;
+  color: #212121;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.contact-us button:hover {
+  background-color: #EAEAEA;
+  color: #212121;
+}
+
+
+/* Videos */
+#videos {
+  background-color:  #4A4A4A;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#videos h1{
+  color:  #BCB5AA;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.video-caption {
+    color: #BCB5AA;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .landing-page h1 {
+    font-size: 3rem;
+  }
+
+  .landing-page h2 {
+    font-size: 1.2rem;
+  }
+
+  .shop-page .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .testimonial-caption {
+    font-size: 1.5rem;
+  }
+
+  .contact-us figure {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
